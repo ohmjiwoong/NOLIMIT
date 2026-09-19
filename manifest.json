@@ -1,0 +1,20 @@
+{
+  "name": "NOLIMIT Ultimate Frisbee Team",
+  "short_name": "NOLIMIT",
+  "description": "NOLIMIT 얼티밋 프리즈비 팀",
+  "id": "./index.html",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#071a2e",
+  "theme_color": "#071a2e",
+  "icons": [
+    {
+      "src": "logo.png.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

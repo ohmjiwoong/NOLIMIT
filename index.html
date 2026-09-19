@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NOLIMIT 시작하기</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="manifest" href="manifest.json">
+	<link rel="icon" type="image/png" href="logo.png.png">
+	<meta name="theme-color" content="#071a2e">
+</head>
+<body>
+	<main class="logo-loader" aria-label="NOLIMIT 로딩 중">
+		<div class="loader-orbit orbit-one"></div>
+		<div class="loader-orbit orbit-two"></div>
+		<div class="loader-logo-wrap">
+			<img class="loader-logo" src="logo.png.png" alt="NOLIMIT 로고">
+		</div>
+		<p class="loader-wordmark">NOLIMIT</p>
+		<div class="loader-progress"><span></span></div>
+		<p class="loader-caption">ULTIMATE FRISBEE TEAM</p>
+	</main>
+
+	<script>
+		if ("serviceWorker" in navigator) {
+			navigator.serviceWorker.register("./sw.js", { scope: "./" });
+		}
+
+		window.setTimeout(() => {
+			window.location.replace("home.html");
+		}, 1800);
+	</script>
+</body>
+</html>
